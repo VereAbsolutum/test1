@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Tittle -->
+    <title>About Me | Personal Portfolio</title>
+  </head>
+
+  <body>
+    <!-- header ----------------------------------------------------------------------------------------->
+    <header id="header" class="header z-10 position-relative">
+      <div class="container-fluid">
+        <nav class="position-relative">
+          <a
+            href="#"
+            class="header__brand | clr-neutral-dark position-absolute left-0 margin-top-4 z-10"
+          >
+            <strong class="header__brand-title | text-md clr-neutral-dark"
+              >Vere Absolutum</strong
+            >
+            <br />
+            <strong
+              class="header__brand-subtitle | text-extra-small text-uppercase clr-neutral-dark text-weight-light"
+            >
+              Web & UI Designer</strong
+            >
+          </a>
+
+          <!-- menu button -->
+          <div
+            id="open"
+            class="btn-open | position-absolute right-0 margin-top-4 z-10"
+          >
+            <span
+              class="btn-open__title | text-sm clr-neutral-dark letter-spacing-0 margin-right-4 clr-neutral-dark text-uppercase"
+              >Menu</span
+            >
+            <div class="btn-open__burger">
+              <span
+                class="btn-open__1 btn-open__bar | clr-bg-neutral-dark"
+              ></span>
+              <span
+                class="btn-open__2 btn-open__bar | clr-bg-neutral-dark"
+              ></span>
+              <span
+                class="btn-open__3 btn-open__bar | clr-bg-neutral-dark"
+              ></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- navbar ----------------------------------------------------------------------------------------->
+    <div
+      id="nav"
+      class="nav | position-fixed top-0 w-100 left-0 z-1002"
+      data-status="closed"
+    >
+      <div class="container-fluid">
+        <nav class="position-relative">
+          <a
+            id="nav-brand"
+            href="#"
+            class="nav__brand | position-absolute left-0 margin-top-4 z-1000"
+          >
+            <strong class="nav__brand-title | text-md">Vere Absolutum</strong>
+            <br />
+            <strong
+              class="nav__brand-subtitle | text-extra-small text-uppercase text-weight-light"
+            >
+              Web & UI Designer</strong
+            >
+          </a>
+
+          <!-- button close -->
+          <div
+            id="close"
+            class="btn-close | position-absolute right-0 margin-top-4 z-1000"
+          >
+            <span
+              class="btn-close__title | letter-spacing-0 margin-right-4 text-sm text-uppercase"
+              >Menu</span
+            >
+            <div class="btn-close__burger">
+              <span
+                class="btn-close__bar btn-close__1 | clr-bg-neutral-dark-55"
+              ></span>
+              <span
+                class="btn-close__bar btn-close__2 | clr-bg-neutral-dark-55"
+              ></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- .nav-main -->
+    <nav
+      id="nav-main"
+      class="nav-main | position-fixed top-0 w-100 z-1001"
+      data-status="closed"
+    >
+      <div
+        class="nav-main__wrapper | padding-top-4x6 flow flex-column | wrapper-centered"
+      >
+        <h5
+          class="nav-main__title | clr-neutral-dark-55 text-center text-sm letter-spacing-1 text-uppercase text-weight-regular"
+        >
+          Menu
+        </h5>
+        <ul class="text-center clr-neutral-dark-55">
+          <li>
+            <a href="index.html">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" class="active">About me</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- navbar footer -->
+    <footer
+      id="overlay-footer"
+      class="navbar__footer | position-fixed bottom-0 w-100 margin-block-8 text-center z-1002"
+      data-status="closed"
+    >
+      <p>© 2018 Damian Watracz</p>
+    </footer>
+    <!-- overlay -->
+    <div
+      class="navbar__overlay | h-100 display-hidden clr-bg-primary position-fixed left-0 w-100 top-0 w-100 z-1000"
+      id="navbar-overlay"
+      data-status="closed"
+    ></div>
+
+    <main id="main" class="main">
+      <!-- section about ----------------------------------------------------------------------------------------->
+      <section class="section about | padding-top-4x10" id="about">
+        <div
+          class="about__header | flow | container-fluid display-flex flex-column flex-justify-center flex-align-lg-center"
+        >
+          <p class="about__subtitle | subtitle">A few words about me</p>
+          <h1 class="about__title | title">
+            I’m Damian Watracz, a multidisciplinary designer who focuses on
+            telling my clients’ stories visually, through enjoyable and
+            meaningful experiences. I specialize in responsive websites and
+            functional user interfaces.
+          </h1>
+          <p class="about__description | description">
+            Over the past 9 years I have been working with big companies and
+            rising startups around the world as a designer and art director,
+            working solo and leading small design teams. In my spare time I
+            enjoy photography and motorcycle adventures.
+          </p>
+        </div>
+      </section>
+      <!-- section slide full ----------------------------------------------------------------------------------------->
+      <section id="slide-full" class="section slide-full">
+        <div class="container-fluid">
+          <!-- Swiper -->
+          <div class="swiper s-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/about-dribbble-2.jpg" alt="img-1" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- section services ----------------------------------------------------------------------------------------->
+      <section id="services" class="section services">
+        <div
+          class="services__wrapper | padding-top-4x6 container-fluid display-grid"
+        >
+          <div
+            class="services__header | flow | display-flex flex-column flex-justify-center flex-align-lg-center"
+          >
+            <h2
+              class="services__title | text-sm letter-spacing-1 text-uppercase text-weight-light clr-neutral-dark-55"
+            >
+              Design Services
+            </h2>
+            <h3
+              class="services__description | text-md clr-neutral-dark text-weight-bold letter-spacing-0"
+            >
+              Art direction
+              <em class="clr-neutral-dark-55"> / </em> Web & mobile
+              <em class="clr-neutral-dark-55"> / </em> Brand identity
+              <em class="clr-neutral-dark-55"> / </em> UX & UI
+              <em class="clr-neutral-dark-55"> / </em> Iconography
+              <em class="clr-neutral-dark-55"> / </em> Animation
+              <em class="clr-neutral-dark-55"> / </em> Photography
+            </h3>
+          </div>
+          <div
+            class="services__header | flow | display-flex flex-column flex-justify-center flex-align-lg-center"
+          >
+            <h2
+              class="services__title | text-sm letter-spacing-1 text-uppercase text-weight-light clr-neutral-dark-55"
+            >
+              Design Services
+            </h2>
+
+            <h3
+              class="services__description | text-md clr-neutral-dark text-weight-bold letter-spacing-0"
+            >
+              Photoshop
+              <em class="clr-neutral-dark-55"> / </em> Illustrator
+              <em class="clr-neutral-dark-55"> / </em> Sketch
+              <em class="clr-neutral-dark-55"> / </em> XD
+              <em class="clr-neutral-dark-55"> / </em> InVision
+              <em class="clr-neutral-dark-55"> / </em> UXPin
+              <em class="clr-neutral-dark-55"> / </em> After Effects
+              <em class="clr-neutral-dark-55"> / </em> Premiere Pro
+              <em class="clr-neutral-dark-55"> / </em> Lightroom
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!-- section experience ----------------------------------------------------------------------------------------->
+      <section id="experience" class="section experience">
+        <div class="container-fluid">
+          <div class="experience__wrapper | padding-top-4x6 border-top-regular">
+            <div
+              class="experience__header | flow | display-flex flex-column flex-justify-center flex-align-lg-center"
+            >
+              <h2 class="experience__subtitle | subtitle">Experience</h2>
+              <h1 class="experience__title | title">
+                Over 9 years of experience
+              </h1>
+              <p class="experience__description | text-md letter-spacing-0">
+                I’ve been lucky enough to establish relationships with amazing
+                clients from all over the world, ranging from individual
+                clients, through up-and-coming startups, to multinational
+                companies. For more details, head over to my LinkedIn profile.
+              </p>
+            </div>
+
+            <div class="experience__data list | flow | margin-top-12">
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__item-content">
+                  <p class="text-base">
+                    <strong class="clr-neutral-dark">
+                      Damian Watracz Design</strong
+                    >
+                  </p>
+                  <p>Founder, Creative Director, Designer</p>
+                  <p>October 2010 — Present</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section clients ----------------------------------------------------------------------------------------->
+      <section id="client" class="section client">
+        <div class="container-fluid">
+          <div class="client__wrapper | padding-top-4x6 border-top-regular">
+            <div
+              class="client__header | flow | display-flex flex-column flex-justify-center flex-align-lg-center"
+            >
+              <h2 class="client__subtitle | subtitle">Clients</h2>
+              <h1 class="client__title | title">
+                Some of the brands I’ve worked with
+              </h1>
+              <p class="client__description | description">
+                Over the past 8 years I’ve had the pleasure to work with
+                customers from various sectors on many interesting projects.
+              </p>
+            </div>
+            <div class="client__data | display-grid margin-top-4x4">
+              <div><img src="assets/img/logo_cloudtec.svg" alt=logo-1" /></div>
+              <div><img src="assets/img/logo_cloudtec.svg" alt=logo-1" /></div>
+              <div><img src="assets/img/logo_cloudtec.svg" alt=logo-1" /></div>
+              <div><img src="assets/img/logo_cloudtec.svg" alt=logo-1" /></div>
+              <div><img src="assets/img/logo_cloudtec.svg" alt=logo-1" /></div>
+              <div><img src="assets/img/logo_cloudtec.svg" alt=logo-1" /></div>
+              <div><img src="assets/img/logo_cloudtec.svg" alt=logo-1" /></div>
+              <div><img src="assets/img/logo_cloudtec.svg" alt=logo-1" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section publicity ----------------------------------------------------------------------------------------->
+      <section id="publicity" class="section publicity">
+        <div class="container-fluid">
+          <div class="publicity__wrapper | padding-top-4x6 border-top-regular">
+            <div
+              class="publicity__header | flow | display-flex flex-column flex-justify-center flex-align-lg-center"
+            >
+              <h2 class="publicity__subtitle | subtitle">Publicity</h2>
+              <h1 class="publicity__title | title">
+                Events, Interviews, Features, Mentions
+              </h1>
+            </div>
+
+            <div class="publicity__data | flow | margin-top-12">
+              <div class="row gy-3">
+                <div class="col-12">
+                  <h3
+                    class="publicity__data-title | text-lg text-weight-bold letter-spacing-0"
+                  >
+                    2016
+                  </h3>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <p>
+                      <strong class="clr-neutral-dark">Estimote --</strong>
+                      Graphic design mentor and jury member at the RealityHack
+                      Hackathon
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <p>
+                      <strong class="clr-neutral-dark">Estimote --</strong>
+                      Graphic design mentor and jury member at the RealityHack
+                      Hackathon
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4"></div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="col-12">
+                  <h3
+                    class="publicity__data-title | text-lg text-weight-bold letter-spacing-0"
+                  >
+                    2016
+                  </h3>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <p>
+                      <strong class="clr-neutral-dark">Estimote --</strong>
+                      Graphic design mentor and jury member at the RealityHack
+                      Hackathon
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <p>
+                      <strong class="clr-neutral-dark">Estimote --</strong>
+                      Graphic design mentor and jury member at the RealityHack
+                      Hackathon
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <p>
+                      <strong class="clr-neutral-dark">Estimote --</strong>
+                      Graphic design mentor and jury member at the RealityHack
+                      Hackathon
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="col-12">
+                  <h3
+                    class="publicity__data-title | text-lg text-weight-bold letter-spacing-0"
+                  >
+                    2016
+                  </h3>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <p>
+                      <strong class="clr-neutral-dark">Estimote --</strong>
+                      Graphic design mentor and jury member at the RealityHack
+                      Hackathon
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <p>
+                      <strong class="clr-neutral-dark">Estimote --</strong>
+                      Graphic design mentor and jury member at the RealityHack
+                      Hackathon
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div>
+                    <p>
+                      <strong class="clr-neutral-dark">Estimote --</strong>
+                      Graphic design mentor and jury member at the RealityHack
+                      Hackathon
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section contact ----------------------------------------------------------------------------------------->
+      <section id="contact" class="section contact">
+        <div class="container-fluid">
+          <div
+            class="contact__wrapper | padding-top-4x6 border-top-regular padding-block-8"
+          >
+            <p
+              class="contact__title | text-small letter-spacing-0 text-uppercase text-weight-light letter-spacing-1"
+            >
+              Need a designer?
+            </p>
+            <h1 class="contact__subtitle | margin-top-2 text-large">
+              <a href="#" class="contact__link | position-relative link-special"
+                >Let's Work Together <i class="fas fa-arrow-right"></i
+              ></a>
+            </h1>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- section footer ----------------------------------------------------------------------------------------->
+    <footer id="footer" class="section footer | container-fluid">
+      <div class="footer__wrapper | padding-top-4x6 border-top-regular">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <div
+                class="footer__contact | flow | col-sm-6-6 col-md-12-12 col-smd-12-12 col-lg-4-12"
+              >
+                <h2 class="footer__contact-title | text-md letter-spacing-1">
+                  Contact <br />
+                  Information —
+                </h2>
+                <p class="footer__contact-description |">
+                  Feel free to reach out to me any time. I prefer to talk over
+                  email, especially since we may be a few time zones away.
+                </p>
+                <ul class="footer__contact-list | ul">
+                  <li>
+                    E:
+                    <span class="clr-neutral-dark"
+                      >damian.watracz@gmail.com</span
+                    >
+                  </li>
+                  <li>
+                    P:<span class="clr-neutral-dark">+48-517-512-348</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="footer__project | flow">
+                  <h2 class="footer__project-title | text-md letter-spacing-1">
+                    Latest <br />
+                    projects —
+                  </h2>
+                  <ul
+                    class="footer__project-menu | link-special display-flex flex-wrap"
+                  >
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="footer__about | flow">
+                      <h2
+                        class="footer__about-title | text-md letter-spacing-1"
+                      >
+                        About <br />
+                        me —
+                      </h2>
+                      <p class="regular-text">
+                        I usually work on several projects but I’ll be happy to
+                        discuss new opportunities. Let’s get in touch!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="footer__social | flow">
+                      <h2
+                        class="footer__social-title | text-md letter-spacing-1"
+                      >
+                        Follow <br />
+                        me on —
+                      </h2>
+                      <ul
+                        class="footer__social-menu | link-special display-flex flex-wrap"
+                      >
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- button up ----------------------------------------------------------------------------------------->
+    <a href="#about" id="button-up" class="button-up"
+      ><i class="fas fa-arrow-up"></i
+    ></a>
+
+    <!-- button contact ----------------------------------------------------------------------------------------->
+    <a href="#" id="contact-button" class="contact-button">
+      <i class="fa fa-envelope"></i>
+      <span class="contact-button__float text-sm">Contact Me</span>
+    </a>
+
+    <!-- anime-js -->
+    <script src="assets/vendor/anime-master/anime.min.js"></script>
+    <!-- swiper scripts -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- custom swiper -->
+    <script src="assets/js/custom-swiper.js"></script>
+    <!-- scripts -->
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Tittle -->
+    <title>Contact | Personal Portfolio</title>
+  </head>
+
+  <body>
+    <!-- header ----------------------------------------------------------------------------------------->
+    <header id="header" class="header z-10 position-relative">
+      <div class="container-fluid">
+        <nav class="position-relative">
+          <a
+            href="#"
+            class="header__brand | clr-neutral-dark position-absolute left-0 margin-top-4 z-10"
+          >
+            <strong class="header__brand-title | text-md clr-neutral-dark"
+              >Vere Absolutum</strong
+            >
+            <br />
+            <strong
+              class="header__brand-subtitle | text-extra-small text-uppercase clr-neutral-dark text-weight-light"
+            >
+              Web & UI Designer</strong
+            >
+          </a>
+
+          <!-- menu button -->
+          <div
+            id="open"
+            class="btn-open | position-absolute right-0 margin-top-4 z-10"
+          >
+            <span
+              class="btn-open__title | text-sm clr-neutral-dark letter-spacing-0 margin-right-4 clr-neutral-dark text-uppercase"
+              >Menu</span
+            >
+            <div class="btn-open__burger">
+              <span
+                class="btn-open__1 btn-open__bar clr-bg-neutral-dark"
+              ></span>
+              <span
+                class="btn-open__2 btn-open__bar clr-bg-neutral-dark"
+              ></span>
+              <span
+                class="btn-open__3 btn-open__bar clr-bg-neutral-dark"
+              ></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- navbar ----------------------------------------------------------------------------------------->
+    <div
+      id="nav"
+      class="nav | position-fixed top-0 w-100 left-0 z-1002"
+      data-status="closed"
+    >
+      <div class="container-fluid">
+        <nav class="position-relative">
+          <a
+            id="nav-brand"
+            href="#"
+            class="nav__brand | position-absolute left-0 margin-top-4 z-1000"
+          >
+            <strong class="nav__brand-title | text-md">Vere Absolutum</strong>
+            <br />
+            <strong
+              class="nav__brand-subtitle | text-extra-small text-uppercase text-weight-light"
+            >
+              Web & UI Designer</strong
+            >
+          </a>
+
+          <!-- button close -->
+          <div
+            id="close"
+            class="btn-close | position-absolute right-0 margin-top-4 z-1000"
+          >
+            <span
+              class="btn-close__title | letter-spacing-0 margin-right-4 text-sm text-uppercase"
+              >Menu</span
+            >
+            <div class="btn-close__burger">
+              <span
+                class="btn-close__bar btn-close__1 clr-bg-neutral-dark-55"
+              ></span>
+              <span
+                class="btn-close__bar btn-close__2 clr-bg-neutral-dark-55"
+              ></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- .nav-main -->
+    <nav
+      id="nav-main"
+      class="nav-main | position-fixed top-0 w-100 z-1001"
+      data-status="closed"
+    >
+      <div
+        class="nav-main__wrapper | padding-top-4x6 flow flex-column | wrapper-centered"
+      >
+        <h5
+          class="nav-main__title | clr-neutral-dark-55 text-center text-sm letter-spacing-1 text-uppercase text-weight-regular"
+        >
+          Menu
+        </h5>
+        <ul class="text-center clr-neutral-dark-55">
+          <li>
+            <a href="index.html">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" class="active">About me</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- navbar footer -->
+    <div
+      id="overlay-footer"
+      class="navbar__footer | position-fixed bottom-0 w-100 margin-block-8 text-center z-1002"
+      data-status="closed"
+    >
+      <p>© 2018 Damian Watracz</p>
+    </div>
+    <!-- overlay -->
+    <div
+      class="navbar__overlay | h-100 display-hidden clr-bg-primary position-fixed left-0 w-100 top-0 w-100 z-1000"
+      id="navbar-overlay"
+      data-status="closed"
+    ></div>
+
+    <main id="main" class="main overflow-x-hidden">
+      <!-- section map ----------------------------------------------------------------------------------------->
+      <section id="contact-map" class="contact-map | section">
+        <div class="contact-map__container | position-relative">
+          <div
+            id="contact-map-content"
+            class="contact-map__content | position-absolute top-0 left-0 h-100 w-100"
+          >
+            <!-- letters -->
+            <div
+              id="contact-map-letters"
+              class="contact-map__data | display-none position-absolute top-0 right-0"
+            >
+              <span>L</span>
+              <span>e</span>
+              <span>t'</span>
+              <span>s</span>
+              <span>W</span>
+              <span>o</span>
+              <span>r</span>
+              <span>k</span>
+              <span>T</span>
+              <span>o</span>
+              <span>g</span>
+              <span>e</span>
+              <span>t</span>
+              <span>h</span>
+              <span>e</span>
+              <span>r</span>
+            </div>
+            <!-- map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202404.21945358618!2d126.84946302394928!3d37.56528939994411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2sSeul%2C%20Coreia%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1648685054798!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- section contact form ----------------------------------------------------------------------------------------->
+      <section id="contact-form" class="contact-form section">
+        <div class="contact-form__container container-fluid | display-grid">
+          <div class="contact-form__data | flow">
+            <h2 class="subtitle">Contact</h2>
+            <h1 class="title">Get in touch -- let's work together.</h1>
+            <p class="subtitle | margin-top-6"><strong>Address</strong></p>
+            <p class="margin-top-2">
+              Damian Watracz <br />
+              Os. Oświecenia 12<br />
+              31-635 Krakow<br />
+              Poland, EU
+            </p>
+          </div>
+
+          <div class="contact-form__content | flow">
+            <p class="text-md">
+              Got a project? Drop me a line if you want to work together on
+              something exciting. Big or small. Mobile or web.
+            </p>
+
+            <div class="content-form__wrapper">
+              <form
+                id="form"
+                class="form"
+                method="POST"
+                action="assets/php/mail.php"
+              >
+                <div class="form__wrapper | display-grid">
+                  <div class="form__element | flow | border-bottom">
+                    <label class="text-small" for="name">Name</label>
+                    <input type="text" name="name" />
+                    <span></span>
+                  </div>
+                  <div class="form__element | flow | border-bottom">
+                    <label class="text-small" for="email">Email</label>
+                    <input type="email" name="email" />
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="form__wrapper | display-grid">
+                  <div class="form__element | flow | border-bottom">
+                    <label class="text-small" for="service">Service</label>
+                    <input type="text" name="subject" />
+                    <span></span>
+                  </div>
+                  <div class="form__element | flow | border-bottom">
+                    <label class="text-small" for="budged">Budged</label>
+                    <input type="text" name="budged" />
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="form__wrapper">
+                  <div class="form__element | flow | border-bottom">
+                    <label class="text-small" for="#form-message"
+                      >Message</label
+                    >
+                    <textarea
+                      name="message"
+                      id="form-messege"
+                      class="form__textarea"
+                      name="message"
+                      rows="1"
+                    ></textarea>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="form__wrapper">
+                  <div class="form__element">
+                    <div class="clr-neutral-dark">
+                      <button type="submit ">
+                        <i class="fas fa-envelope"></i>
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form__element">
+                    <div class="message | display-none">
+                      <i class="fas fa-exclamation-circle"></i>
+                      <p class="margin-left-2 display-inline-block">
+                        Make sure you got all the fields right!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- section footer ----------------------------------------------------------------------------------------->
+    <footer id="footer" class="section footer | container-fluid">
+      <div class="footer__wrapper | padding-top-4x6 border-top-regular">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <div
+                class="footer__contact | flow | col-sm-6-6 col-md-12-12 col-smd-12-12 col-lg-4-12"
+              >
+                <h2 class="footer__contact-title | text-md letter-spacing-1">
+                  Contact <br />
+                  Information —
+                </h2>
+                <p class="footer__contact-description |">
+                  Feel free to reach out to me any time. I prefer to talk over
+                  email, especially since we may be a few time zones away.
+                </p>
+                <ul class="footer__contact-list | ul">
+                  <li>
+                    E:
+                    <span class="clr-neutral-dark"
+                      >damian.watracz@gmail.com</span
+                    >
+                  </li>
+                  <li>
+                    P:<span class="clr-neutral-dark">+48-517-512-348</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="footer__project | flow">
+                  <h2 class="footer__project-title | text-md letter-spacing-1">
+                    Latest <br />
+                    projects —
+                  </h2>
+                  <ul
+                    class="footer__project-menu | link-special display-flex flex-wrap"
+                  >
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="footer__about | flow">
+                      <h2
+                        class="footer__about-title | text-md letter-spacing-1"
+                      >
+                        About <br />
+                        me —
+                      </h2>
+                      <p class="regular-text">
+                        I usually work on several projects but I’ll be happy to
+                        discuss new opportunities. Let’s get in touch!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="footer__social | flow">
+                      <h2
+                        class="footer__social-title | text-md letter-spacing-1"
+                      >
+                        Follow <br />
+                        me on —
+                      </h2>
+                      <ul
+                        class="footer__social-menu | link-special display-flex flex-wrap"
+                      >
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- button up ----------------------------------------------------------------------------------------->
+    <a href="#about" id="button-up" class="button-up"
+      ><i class="fas fa-arrow-up"></i
+    ></a>
+
+    <!-- anime-js -->
+    <script src="assets/vendor/anime-master/anime.min.js"></script>
+    <!-- swiper scripts -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- custom swiper -->
+    <script src="assets/js/custom-swiper.js"></script>
+    <!-- scripts -->
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

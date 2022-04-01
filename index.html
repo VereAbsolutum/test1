@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Tittle -->
+    <title>Projects | Personal Portfolio</title>
+  </head>
+
+  <body>
+    <!-- header ----------------------------------------------------------------------------------------->
+    <header id="header" class="header z-10 position-relative">
+      <div class="container-fluid">
+        <nav class="position-relative">
+          <a
+            href="#"
+            class="header__brand | clr-neutral-dark position-absolute left-0 margin-top-4 z-10"
+          >
+            <strong class="header__brand-title | text-md clr-neutral-dark"
+              >Vere Absolutum</strong
+            >
+            <br />
+            <strong
+              class="header__brand-subtitle text-center | text-extra-small text-uppercase clr-neutral-dark text-weight-light"
+            >
+              Web & UI Designer</strong
+            >
+          </a>
+
+          <!-- menu button -->
+          <div
+            id="open"
+            class="btn-open | position-absolute right-0 margin-top-4 z-10"
+          >
+            <span
+              class="btn-open__title | text-sm clr-neutral-dark letter-spacing-0 margin-right-4 clr-neutral-dark text-uppercase"
+              >Menu</span
+            >
+            <div class="btn-open__burger">
+              <span
+                class="btn-open__1 btn-open__bar clr-bg-neutral-dark"
+              ></span>
+              <span
+                class="btn-open__2 btn-open__bar clr-bg-neutral-dark"
+              ></span>
+              <span
+                class="btn-open__3 btn-open__bar clr-bg-neutral-dark"
+              ></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- navbar ----------------------------------------------------------------------------------------->
+    <div
+      id="nav"
+      class="nav | position-fixed top-0 w-100 left-0 z-1002"
+      data-status="closed"
+    >
+      <div class="container-fluid">
+        <nav class="position-relative">
+          <a
+            id="nav-brand"
+            href="#"
+            class="nav__brand | clr-neutral-dark-55 position-absolute left-0 margin-top-4 z-1000"
+          >
+            <strong class="nav__brand-title | text-md">Vere Absolutum</strong>
+            <br />
+            <strong
+              class="nav__brand-subtitle text-center | text-extra-small text-uppercase text-weight-light"
+            >
+              Web & UI Designer</strong
+            >
+          </a>
+
+          <!-- button close -->
+          <div
+            id="close"
+            class="btn-close | position-absolute right-0 margin-top-4 z-1000"
+          >
+            <span
+              class="btn-close__title | clr-neutral-dark-55 letter-spacing-0 margin-right-4 text-sm text-uppercase"
+              >Menu</span
+            >
+            <div class="btn-close__burger">
+              <span
+                class="btn-close__bar btn-close__1 | clr-bg-neutral-dark-55"
+              ></span>
+              <span
+                class="btn-close__bar btn-close__2 | clr-bg-neutral-dark-55"
+              ></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- .nav-main -->
+    <nav
+      id="nav-main"
+      class="nav-main | position-fixed top-0 w-100 z-1001"
+      data-status="closed"
+    >
+      <div class="nav-main__wrapper | flow flex-column | wrapper-centered">
+        <h5
+          class="nav-main__title | clr-neutral-dark-55 text-center text-sm letter-spacing-1 text-uppercase text-weight-regular"
+        >
+          Menu
+        </h5>
+        <ul class="text-center clr-neutral-dark-55">
+          <li>
+            <a href="index.html" class="active">Projects</a>
+          </li>
+          <li>
+            <a href="about.html">About me</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- navbar footer -->
+      <footer
+        id="overlay-footer"
+        class="navbar__footer | position-fixed bottom-0 w-100 margin-block-8 text-center z-1002"
+        data-status="closed"
+      >
+        <p>© 2018 Damian Watracz</p>
+      </footer>
+    </nav>
+
+    <!-- overlay -->
+    <div
+      class="navbar__overlay | h-100 display-hidden clr-bg-primary position-fixed left-0 w-100 top-0 w-100 z-1000"
+      id="navbar-overlay"
+      data-status="closed"
+    ></div>
+
+    <main id="main" class="main">
+      <!-- section hero ----------------------------------------------------------------------------------------->
+      <section id="hero" class="section hero" data-reveal="hide">
+        <div class="container-fluid">
+          <!-- bg image -->
+          <div
+            id="hero-background"
+            class="hero__background | position-absolute top-0 left-0 display-block w-100"
+          ></div>
+
+          <!-- hero data -->
+          <div class="hero__wrapper | flow | position-relative z-10">
+            <p class="hero__subtitle | subtitle">DAMIAN WATRACZ</p>
+            <h1 class="hero__title | title text-large">
+              Website and user interface designer
+            </h1>
+            <p class="hero__description | description">
+              Over the past 9 years, as an art director and designer, I’ve
+              worked with big companies and up-and-coming startups to
+              successfully help them reach their full potential and attract new
+              customers.
+            </p>
+            <div class="hero__links | padding-block-3">
+              <a
+                class="link-special position-relative clr-neutral-dark text-weight-bold text-md"
+                href="#project"
+                >View Projects</a
+              >
+              &nbsp; or &nbsp;
+              <a
+                class="link-special position-relative clr-neutral-dark text-weight-bold letter-spacing-0 text-md"
+                href="#about"
+                >Read About Me</a
+              >
+            </div>
+          </div>
+
+          <!-- scroll icon -->
+          <a
+            href="#case"
+            id="scroll-to"
+            class="clr-neutral-dark-55 text-center w-100 display-block margin-block-8"
+          >
+            <i class="fas fa-mouse fa-xl"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- section case ----------------------------------------------------------------------------------------->
+      <section id="case" class="section case">
+        <h1 class="title text-large text-center">Cases studies</h1>
+        <p class="subtitle text-center">Selected Project</p>
+
+        <div class="case__wrapper | margin-top-7 container-fluid display-grid">
+          <!-- CASE 1 -->
+          <div class="card | position-relative padding-top-4x8">
+            <img src="assets/img/tile_basicux.jpg" alt="" class="card__img" />
+
+            <div
+              class="card__wrapper | position-absolute top-0 left-0 w-100 padding-top-8 padding-inline-8"
+            >
+              <div
+                class="card__description | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | text-lg clr-neutral-light line-height"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+              </div>
+
+              <div
+                class="card__description-hover | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | display-hidden clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | display-hidden text-lg line-height clr-neutral-light"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+                <span
+                  data-order="third"
+                  class="card__link | display-hidden display-block clr-neutral-dark-55"
+                  >View Case Study <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <i
+              class="circle-text | position-absolute right-0 top-0 margin-right-6 margin-top-4 display-flex flex-align-center flex-justify-center text-sm letter-spacing-0 clr-neutral-light"
+              style="width: 50px; height: 50px"
+              >New</i
+            >
+            <svg
+              viewBox="0 0 100 100"
+              class="circle | position-absolute right-0 top-0 margin-right-6 margin-top-4"
+              style="width: 50px; height: 50px"
+            >
+              <circle
+                class="svg-circle"
+                cx="50"
+                cy="50"
+                r="45"
+                stroke-width="6"
+                fill="hsl(var(--clr-primary))"
+              ></circle>
+            </svg>
+
+            <a href="#" class="modal z-100"></a>
+          </div>
+
+          <!-- CASE 2 -->
+          <div class="card | position-relative padding-top-4x8">
+            <img src="assets/img/tile_basicux.jpg" alt="" class="card__img" />
+
+            <div
+              class="card__wrapper | position-absolute top-0 left-0 w-100 padding-top-8 padding-inline-8"
+            >
+              <div
+                class="card__description | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | text-lg clr-neutral-light line-height"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+              </div>
+
+              <div
+                class="card__description-hover | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | display-hidden clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | display-hidden text-lg line-height clr-neutral-light"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+                <span
+                  data-order="third"
+                  class="card__link | display-hidden display-block clr-neutral-dark-55"
+                  >View Case Study <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <a href="#" class="modal z-100"></a>
+          </div>
+          <!-- CASE 3 -->
+          <div class="card | position-relative padding-top-4x8">
+            <img src="assets/img/tile_basicux.jpg" alt="" class="card__img" />
+
+            <div
+              class="card__wrapper | position-absolute top-0 left-0 w-100 padding-top-8 padding-inline-8"
+            >
+              <div
+                class="card__description | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | text-lg clr-neutral-light line-height"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+              </div>
+
+              <div
+                class="card__description-hover | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | display-hidden clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | display-hidden text-lg line-height clr-neutral-light"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+                <span
+                  data-order="third"
+                  class="card__link | display-hidden display-block clr-neutral-dark-55"
+                  >View Case Study <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <a href="#" class="modal z-100"></a>
+          </div>
+
+          <!-- CASE 4 -->
+          <div class="card | position-relative padding-top-4x8">
+            <img src="assets/img/tile_basicux.jpg" alt="" class="card__img" />
+
+            <div
+              class="card__wrapper | position-absolute top-0 left-0 w-100 padding-top-8 padding-inline-8"
+            >
+              <div
+                class="card__description | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | text-lg clr-neutral-light line-height"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+              </div>
+
+              <div
+                class="card__description-hover | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | display-hidden clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | display-hidden text-lg line-height clr-neutral-light"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+                <span
+                  data-order="third"
+                  class="card__link | display-hidden display-block clr-neutral-dark-55"
+                  >View Case Study <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <a href="#" class="modal z-100"></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section personal ----------------------------------------------------------------------------------------->
+      <section id="personal" class="section">
+        <h1 class="title text-large text-center">Personal Project</h1>
+        <p class="subtitle text-center">Photography & Drawing</p>
+
+        <div
+          class="personal__wrapper | margin-top-7 container-fluid display-grid"
+        >
+          <!-- PERSONAL 1 -->
+          <div class="card | position-relative padding-top-12">
+            <img src="assets/img/tile_basicux.jpg" alt="" class="card__img" />
+
+            <div
+              class="card__wrapper | position-absolute top-0 left-0 w-100 padding-top-8 padding-inline-8"
+            >
+              <div
+                class="card__description | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | text-lg clr-neutral-light line-height"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+              </div>
+
+              <div
+                class="card__description-hover | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | display-hidden clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | display-hidden text-lg line-height clr-neutral-light"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+                <span
+                  data-order="third"
+                  class="card__link | display-hidden display-block clr-neutral-dark-55"
+                  >View Case Study <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <a href="#" class="modal z-100"></a>
+          </div>
+
+          <!-- PERSONAL 2 -->
+          <div class="card | position-relative padding-top-12">
+            <img src="assets/img/tile_basicux.jpg" alt="" class="card__img" />
+
+            <div
+              class="card__wrapper | position-absolute top-0 left-0 w-100 padding-top-8 padding-inline-8"
+            >
+              <div
+                class="card__description | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | text-lg clr-neutral-light line-height"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+              </div>
+
+              <div
+                class="card__description-hover | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | display-hidden clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | display-hidden text-lg line-height clr-neutral-light"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+                <span
+                  data-order="third"
+                  class="card__link | display-hidden display-block clr-neutral-dark-55"
+                  >View Case Study <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <a href="#" class="modal z-100"></a>
+          </div>
+
+          <!-- PERSONAL 3 -->
+          <div class="card | position-relative padding-top-12">
+            <img src="assets/img/tile_basicux.jpg" alt="" class="card__img" />
+
+            <div
+              class="card__wrapper | position-absolute top-0 left-0 w-100 padding-top-8 padding-inline-8"
+            >
+              <div
+                class="card__description | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | text-lg clr-neutral-light line-height"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+              </div>
+
+              <div
+                class="card__description-hover | flow | position-absolute left-0 z-10 padding-inline-8"
+              >
+                <h3
+                  data-order="first"
+                  class="card__title | display-hidden clr-neutral-dark-55"
+                >
+                  2018 - 2019
+                </h3>
+                <p
+                  data-order="second"
+                  class="card__text | display-hidden text-lg line-height clr-neutral-light"
+                >
+                  Basic UX - design resources for InVision Studio
+                </p>
+                <span
+                  data-order="third"
+                  class="card__link | display-hidden display-block clr-neutral-dark-55"
+                  >View Case Study <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <a href="#" class="modal z-100"></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section social ----------------------------------------------------------------------------------------->
+      <section id="social" class="section social">
+        <div class="container-fluid">
+          <h1 class="title text-large text-center">Latest on Instagram</h1>
+          <p class="subtitle text-center">Photography & Drawing</p>
+          <div
+            class="social__wrapper | margin-top-7 container-fluid padding-inline-2"
+          >
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- SOCIAL 1 -->
+                <div class="swiper-slide | card | padding-top-10">
+                  <img
+                    src="assets/img/tile_basicux.jpg"
+                    alt=""
+                    class="card__img"
+                  />
+
+                  <div
+                    class="card__wrapper card__social | z-100 flex-alight-center flex-justify-center | display-flex padding-top-8 h-100 padding-inline-8 position-absolute top-0 left-0 w-100"
+                  >
+                    <div class="card__description-hover | flow">
+                      <h3
+                        data-order="first"
+                        class="card__social-title | display-hidden clr-neutral-dark-55 text-center"
+                      >
+                        2018 - 2019
+                      </h3>
+                      <p
+                        data-order="second"
+                        class="card__social-description | clr-neutral-light display-hidden text-md line-height text-center clr-neutral-light"
+                      >
+                        Basic UX - design resources for InVision Studio
+                      </p>
+                      <span
+                        data-order="third"
+                        class="card__social-couter | display-block display-hidden text-center clr-neutral-dark-55"
+                        >View Case Study <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <a href="#" class="modal z-100 | z-1000"></a>
+                </div>
+                <!-- SOCIAL 2 -->
+                <div class="swiper-slide | card | padding-top-10">
+                  <img
+                    src="assets/img/tile_basicux.jpg"
+                    alt=""
+                    class="card__img"
+                  />
+
+                  <div
+                    class="card__wrapper card__social | z-100 flex-alight-center flex-justify-center | display-flex padding-top-8 h-100 padding-inline-8 position-absolute top-0 left-0 w-100"
+                  >
+                    <div class="card__description-hover | flow">
+                      <h3
+                        data-order="first"
+                        class="card__social-title | display-hidden clr-neutral-dark-55 text-center"
+                      >
+                        2018 - 2019
+                      </h3>
+                      <p
+                        data-order="second"
+                        class="card__social-description | clr-neutral-light display-hidden text-md line-height text-center clr-neutral-light"
+                      >
+                        Basic UX - design resources for InVision Studio
+                      </p>
+                      <span
+                        data-order="third"
+                        class="card__social-couter | display-block display-hidden text-center clr-neutral-dark-55"
+                        >View Case Study <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <a href="#" class="modal z-100"></a>
+                </div>
+                <!-- SOCIAL 3 -->
+                <div class="swiper-slide | card | padding-top-10">
+                  <img
+                    src="assets/img/tile_basicux.jpg"
+                    alt=""
+                    class="card__img"
+                  />
+
+                  <div
+                    class="card__wrapper card__social | z-100 flex-alight-center flex-justify-center | display-flex padding-top-8 h-100 padding-inline-8 position-absolute top-0 left-0 w-100"
+                  >
+                    <div class="card__description-hover | flow">
+                      <h3
+                        data-order="first"
+                        class="card__social-title | display-hidden clr-neutral-dark-55 text-center"
+                      >
+                        2018 - 2019
+                      </h3>
+                      <p
+                        data-order="second"
+                        class="card__social-description | clr-neutral-light display-hidden text-md line-height text-center clr-neutral-light"
+                      >
+                        Basic UX - design resources for InVision Studio
+                      </p>
+                      <span
+                        data-order="third"
+                        class="card__social-couter | display-block display-hidden text-center clr-neutral-dark-55"
+                        >View Case Study <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <a href="#" class="modal z-100"></a>
+                </div>
+                <!-- SOCIAL 4 -->
+                <div class="swiper-slide | card | padding-top-10">
+                  <img
+                    src="assets/img/tile_basicux.jpg"
+                    alt=""
+                    class="card__img"
+                  />
+
+                  <div
+                    class="card__wrapper card__social | z-100 flex-alight-center flex-justify-center | display-flex padding-top-8 h-100 padding-inline-8 position-absolute top-0 left-0 w-100"
+                  >
+                    <div class="card__description-hover | flow">
+                      <h3
+                        data-order="first"
+                        class="card__social-title | display-hidden clr-neutral-dark-55 text-center"
+                      >
+                        2018 - 2019
+                      </h3>
+                      <p
+                        data-order="second"
+                        class="card__social-description | clr-neutral-light display-hidden text-md line-height text-center clr-neutral-light"
+                      >
+                        Basic UX - design resources for InVision Studio
+                      </p>
+                      <span
+                        data-order="third"
+                        class="card__social-couter | display-block display-hidden text-center clr-neutral-dark-55"
+                        >View Case Study <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <a href="#" class="modal z-100"></a>
+                </div>
+                <!-- SOCIAL 5 -->
+                <div class="swiper-slide | card | padding-top-10">
+                  <img
+                    src="assets/img/tile_basicux.jpg"
+                    alt=""
+                    class="card__img"
+                  />
+
+                  <div
+                    class="card__wrapper card__social | z-100 flex-alight-center flex-justify-center | display-flex padding-top-8 h-100 padding-inline-8 position-absolute top-0 left-0 w-100"
+                  >
+                    <div class="card__description-hover | flow">
+                      <h3
+                        data-order="first"
+                        class="card__social-title | display-hidden clr-neutral-dark-55 text-center"
+                      >
+                        2018 - 2019
+                      </h3>
+                      <p
+                        data-order="second"
+                        class="card__social-description | clr-neutral-light display-hidden text-md line-height text-center clr-neutral-light"
+                      >
+                        Basic UX - design resources for InVision Studio
+                      </p>
+                      <span
+                        data-order="third"
+                        class="card__social-couter | display-block display-hidden text-center clr-neutral-dark-55"
+                        >View Case Study <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <a href="#" class="modal z-100"></a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section contact ----------------------------------------------------------------------------------------->
+      <section id="contact" class="section contact">
+        <div class="contact__wrapper | container-fluid padding-block-8">
+          <p class="contact__title | subtitle text-center">Need a designer?</p>
+          <h1
+            class="contact__subtitle | title text-center margin-top-2 text-large"
+          >
+            <a href="#" class="contact__link | position-relative link-special"
+              >Let's Work Together <i class="fas fa-arrow-right"></i
+            ></a>
+          </h1>
+        </div>
+      </section>
+    </main>
+
+    <!-- section footer ----------------------------------------------------------------------------------------->
+    <footer id="footer" class="section footer | container-fluid">
+      <div class="footer__wrapper | border-top-regular">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <div
+                class="footer__contact | flow | col-sm-6-6 col-md-12-12 col-smd-12-12 col-lg-4-12"
+              >
+                <h2 class="footer__contact-title | text-md letter-spacing-1">
+                  Contact <br />
+                  Information —
+                </h2>
+                <p class="footer__contact-description |">
+                  Feel free to reach out to me any time. I prefer to talk over
+                  email, especially since we may be a few time zones away.
+                </p>
+                <ul class="footer__contact-list | ul">
+                  <li>
+                    E:
+                    <span class="clr-neutral-dark"
+                      >damian.watracz@gmail.com</span
+                    >
+                  </li>
+                  <li>
+                    P:<span class="clr-neutral-dark">+48-517-512-348</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="footer__project | flow">
+                  <h2 class="footer__project-title | text-md letter-spacing-1">
+                    Latest <br />
+                    projects —
+                  </h2>
+                  <ul
+                    class="footer__project-menu | link-special display-flex flex-wrap"
+                  >
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Iceland</a>
+                    </li>
+                    <li class="footer__project-item">
+                      <a href="#">Basic UX</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="footer__about | flow">
+                      <h2
+                        class="footer__about-title | text-md letter-spacing-1"
+                      >
+                        About <br />
+                        me —
+                      </h2>
+                      <p class="regular-text">
+                        I usually work on several projects but I’ll be happy to
+                        discuss new opportunities. Let’s get in touch!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="footer__social | flow">
+                      <h2
+                        class="footer__social-title | text-md letter-spacing-1"
+                      >
+                        Follow <br />
+                        me on —
+                      </h2>
+                      <ul
+                        class="footer__social-menu | link-special display-flex flex-wrap"
+                      >
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Iceland</a>
+                        </li>
+                        <li class="footer__social-item">
+                          <a href="#">Basic UX</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- button up ----------------------------------------------------------------------------------------->
+    <a href="#hero" id="button-up" class="button-up"
+      ><i class="fas fa-arrow-up"></i
+    ></a>
+
+    <!-- button contact ----------------------------------------------------------------------------------------->
+    <a href="#" id="contact-button" class="contact-button">
+      <i class="fa fa-envelope"></i>
+      <span class="contact-button__float text-sm">Contact Me</span>
+    </a>
+
+    <!-- anime-js -->
+    <script src="assets/vendor/anime-master/anime.min.js"></script>
+    <!-- swiper scripts -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- custom swiper -->
+    <script src="assets/js/custom-swiper.js"></script>
+    <!-- scripts -->
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
